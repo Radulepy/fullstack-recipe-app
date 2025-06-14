@@ -1,4 +1,4 @@
-import { FavoritesListProps, Recipe } from "@/app/types";
+import { FavoritesListProps } from "@/app/types";
 import React from "react";
 import emptyImagePlaceholder from "@/assets/emptyImage.png";
 import { LoadingSpinner } from "./LoadingSpinner";

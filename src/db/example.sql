@@ -4,7 +4,9 @@ CREATE TABLE recipes (
     prep_time VARCHAR(50),
     image VARCHAR(255),
     description TEXT,
-    ingredients TEXT, -- JSON stringified array
-    instructions TEXT, -- JSON stringified array
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    ingredients TEXT NOT NULL,    -- JSON stringified array
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
+-- future; normalize table if needed for ingredients/steps/...

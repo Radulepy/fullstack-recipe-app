@@ -26,7 +26,7 @@ export function getNextRecipeId(): string {
 // Save a single recipe (assigns id if not present)
 export function saveRecipe(recipe: Recipe): Recipe {
     let recipes = getAllRecipes();
-    let newRecipe = { ...recipe };
+    const newRecipe = { ...recipe };
     if (!newRecipe.id) {
         newRecipe.id = getNextRecipeId();
     }

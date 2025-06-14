@@ -46,3 +46,17 @@ Respond ONLY with a JSON array of 3 such objects, no extra text.
 
     return NextResponse.json(recipes);
 }
+
+//from DB ex:
+// const recipeService = new RecipeService();
+
+// export async function GET() {
+//   const recipes = await recipeService.getAllRecipes();
+//   return NextResponse.json(recipes);
+// }
+
+// export async function POST(req: NextRequest) {
+//   const data = await req.json();
+//   const recipe = await recipeService.createRecipe(data);
+//   return NextResponse.json(recipe, { status: 201 });
+// }

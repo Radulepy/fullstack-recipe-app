@@ -1,6 +1,6 @@
-//todo: from env!
-const mysql = require('mysql2/promise');
+import mysql from 'mysql2/promise';
 
+//todo get them from .env
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'your_db_user',
@@ -11,4 +11,4 @@ const pool = mysql.createPool({
     queueLimit: 0,
 });
 
-module.exports = pool;
+export const db = pool;

@@ -14,6 +14,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
         <div className="main-list" role="button" tabIndex={0} onClick={onViewDetails}>
             <div className="favorite-card" role="button" tabIndex={0} onClick={onViewDetails}>
                 {/* img will always be returned empty so display placeholder */}
+                {/* //todo: use <image> from next  */}
                 <img src={emptyImagePlaceholder.src} alt={title} />
                 <div className="info">
                     <div className="title">{title}</div>
