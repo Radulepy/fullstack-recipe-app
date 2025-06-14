@@ -1,0 +1,105 @@
+body {
+    background: #f7f7f7;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.search-bar {
+    max-width: 400px;
+    margin: 0 auto 32px auto;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.main-list {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.favorite-card {
+    display: flex;
+    align-items: center;
+    background: #ededed;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    margin-bottom: 20px;
+    padding: 12px 20px;
+}
+
+.favorite-card img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #e0e0e0;
+    margin-right: 16px;
+}
+
+.favorite-card .info {
+    flex: 1;
+}
+
+.favorite-card .title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.favorite-card .time {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.favorite-card .heart {
+    font-size: 1.5rem;
+    color: #6c4ba6;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.dont-like-btn {
+    background: #6c4ba6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: 0 2px 8px rgba(108, 75, 166, 0.07);
+    transition: background 0.2s;
+    outline: none;
+}
+
+.dont-like-btn:active,
+.dont-like-btn:focus {
+    background: #5a3d99;
+}
