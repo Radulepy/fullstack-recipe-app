@@ -4,7 +4,7 @@ A simple recipe management app for a Full Stack interview position.\
 
 ## Deployed App
 
-[fullstack-recipe-app.vercel.app]([https://fullstack-recipe-app.vercel.app](https://github.com/Radulepy/fullstack-recipe-app/blob/master/WireFrames.png))
+[fullstack-recipe-app.vercel.app](https://fullstack-recipe-app.vercel.app)
 
 
 ## Data Storage
@@ -14,7 +14,7 @@ A simple recipe management app for a Full Stack interview position.\
 
 ## Wireframe
 
-![Wireframe](./wireframe.png)
+![Wireframe](https://github.com/Radulepy/fullstack-recipe-app/blob/master/WireFrames.png)
 
 ## Getting Started
 
