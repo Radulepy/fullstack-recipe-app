@@ -14,7 +14,7 @@ A simple recipe management app for a Full Stack interview position.\
 
 ## Wireframe
 
-![Wireframe](./wireframe.png)
+![Wireframe](https://github.com/Radulepy/fullstack-recipe-app/blob/master/WireFrames.png)
 
 ## Getting Started
 
