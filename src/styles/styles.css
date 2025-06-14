@@ -1,6 +1,8 @@
 body {
-    background: #f7f7f7;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+    background: #fafafa;
 }
 
 .container {
@@ -13,6 +15,14 @@ h2 {
     font-weight: 700;
 }
 
+h2, .section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+/* Search bar */
 .search-bar {
     max-width: 400px;
     margin: 0 auto 32px auto;
@@ -39,11 +49,73 @@ h2 {
     color: #333;
 }
 
+/* Main list container */
 .main-list {
     max-width: 480px;
     margin: 0 auto;
 }
 
+/* Recipe card */
+.recipe-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* Recipe image placeholder */
+.recipe-card img, .recipe-card .image-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  background: #eee;
+  margin-right: 1rem;
+}
+
+/* Recipe time */
+.recipe-time {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Heart icon */
+.heart-icon {
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+/* Button */
+button, .primary-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:active, .primary-btn:active {
+  background: #5b21b6;
+}
+
+/* Empty state and subtle text */
+.empty-state, .subtle-text {
+  color: #888;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Favorite card */
 .favorite-card {
     display: flex;
     align-items: center;
@@ -85,6 +157,7 @@ h2 {
     margin-left: 12px;
 }
 
+/* Don't like button */
 .dont-like-btn {
     background: #6c4ba6;
     color: #fff;
@@ -102,4 +175,22 @@ h2 {
 .dont-like-btn:active,
 .dont-like-btn:focus {
     background: #5a3d99;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  .recipe-card {
+    padding: 0.75rem;
+  }
+  .recipe-card img, .recipe-card .image-placeholder {
+    width: 40px;
+    height: 40px;
+  }
+  button, .primary-btn {
+    font-size: 0.95rem;
+    padding: 0.85rem;
+  }
 }
